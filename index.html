@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="js/main.js" defer></script>
+    <script src="js/footer.js" defer></script>
   </head>
   <body>
     <div class="nav-bar">
@@ -23,7 +25,10 @@
       <div>Contact</div>
     </div>
     <div class="hero-background-image">
-      <img src="images/hero-background.jpg" alt="" />
+      <video autoplay muted loop class="hero-video">
+        <source src="images/videoplayback.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
     <div class="featured-section">
       <div class="featured-title">Featured</div>
@@ -223,6 +228,271 @@
       </div>
     </div>
 
-    <div></div>
+    <!-- Gallery Section -->
+    <div class="gallery-section">
+      <div class="gallery-title">
+        <div class="gallery-title-text">
+          <h3>• Our Collections</h3>
+          <div>Product Gallery</div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="gallery-intro">
+        <p>
+          Explore our curated selection of premium dehydrated goods,
+          thoughtfully preserved to maintain nutrients and flavor.
+        </p>
+      </div>
+
+      <!-- Bento Grid Gallery -->
+      <div class="bento-grid">
+        <div class="bento-item wide tall">
+          <img src="images/featured-img1.jpeg" alt="Dehydrated fruits" />
+          <div class="bento-overlay">
+            <h4>Tropical Fruits</h4>
+            <p>Naturally sweet with no added sugar</p>
+          </div>
+        </div>
+        <div class="bento-item">
+          <img src="images/featured-img2.jpg" alt="Vegetable crisps" />
+          <div class="bento-overlay">
+            <h4>Veggie Crisps</h4>
+            <p>Crunchy and nutritious</p>
+          </div>
+        </div>
+        <div class="bento-item tall">
+          <img src="images/featured-img3.jpg" alt="Herb collection" />
+          <div class="bento-overlay">
+            <h4>Artisan Herbs</h4>
+            <p>Premium culinary herbs</p>
+          </div>
+        </div>
+        <div class="bento-item">
+          <img src="images/about-img1.jpeg" alt="Seasoning blends" />
+          <div class="bento-overlay">
+            <h4>Seasoning Blends</h4>
+            <p>Perfect flavor combinations</p>
+          </div>
+        </div>
+        <div class="bento-item wide">
+          <img src="images/about-img2.jpg" alt="Dehydrated meals" />
+          <div class="bento-overlay">
+            <h4>Ready Meals</h4>
+            <p>Just add water for gourmet dining</p>
+          </div>
+        </div>
+        <div class="bento-item">
+          <img src="images/about-img3.jpeg" alt="Fruit leather" />
+          <div class="bento-overlay">
+            <h4>Fruit Leather</h4>
+            <p>Natural on-the-go snacks</p>
+          </div>
+        </div>
+        <div class="bento-item">
+          <img src="images/product1.jpg" alt="Trail mixes" />
+          <div class="bento-overlay">
+            <h4>Trail Mixes</h4>
+            <p>Energy-boosting combinations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-button">
+        <button>View Full Gallery</button>
+      </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="contact-section">
+      <div class="contact-title">
+        <div class="contact-title-text">
+          <h3>• Get in Touch</h3>
+          <div>Contact Us</div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="contact-content-container">
+        <div class="contact-form-container">
+          <div class="contact-intro">
+            <p>
+              We'd love to hear from you! Whether you have a question about our
+              products, pricing, or anything else, our team is ready to answer
+              all your questions.
+            </p>
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="email@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="(123) 456-7890" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" required>
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="product">Product Inquiry</option>
+                  <option value="wholesale">Wholesale Information</option>
+                  <option value="support">Customer Support</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                placeholder="How can we help you?"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="newsletter" checked />
+              <label for="newsletter"
+                >Subscribe to our newsletter for exclusive offers and
+                updates</label
+              >
+            </div>
+            <button type="submit" class="submit-btn">
+              <span>Send Message</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="send-icon"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Our Address</h4>
+              <p>123 Dehydration Lane, Suite 100<br />Harvest City, CA 92345</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h4>Phone Number</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <h4>Email Address</h4>
+              <p>info@gatewayhorizon.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">🕒</div>
+            <div class="contact-details">
+              <h4>Business Hours</h4>
+              <p>
+                Monday - Friday: 9am - 5pm<br />Saturday: 10am - 2pm<br />Sunday:
+                Closed
+              </p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">🔔</div>
+            <div class="contact-details">
+              <h4>Customer Support</h4>
+              <p>We typically respond within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596093366!2d-122.41941661371711!3d37.7749269513274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1622143483928!5m2!1sen!2sin"
+          class="map-iframe"
+          title="Gateway Horizon Location Map"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="images/Primary-logo.png"
+            alt="GateWay Horizon International Logo"
+          />
+          <p>Premium dehydrated goods for a healthier lifestyle.</p>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="pages/services.html">Services</a></li>
+              <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#">Dehydrated Fruits</a></li>
+              <li><a href="#">Vegetable Crisps</a></li>
+              <li><a href="#">Herb Collections</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Subscribe to Newsletter</h4>
+          <p>Stay updated with our latest products and offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">TW</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2025 GateWay Horizon International. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
