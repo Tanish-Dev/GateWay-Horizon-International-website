@@ -14,9 +14,15 @@ body {
 button {
   color: #eb4538;
   border: 1.5px solid #eb4538;
-  background-color: transparent;
+  background-color: white;
   font-size: 1.1vw;
   padding: 0.5vw 2.5vw;
+}
+
+button:hover {
+  background-color: #eb4538;
+  color: white;
+  cursor: pointer;
 }
 /* Header styles */
 header {
@@ -76,7 +82,6 @@ h3 {
 }
 
 .nav-bar img {
-  width: 100%;
   height: 100%;
 }
 
@@ -211,4 +216,210 @@ h3 {
   justify-content: center;
   font-family: poppins, sans-serif;
   font-weight: 100;
+}
+
+.about-title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 3.5vw;
+  font-weight: 500;
+}
+
+.about-title-text h3 {
+  text-align: left;
+  background-color: #f2f2f2;
+  color: black;
+  max-width: 11vw;
+  padding: 0.2vw 1vw;
+  border-radius: 0.4vw;
+  margin-bottom: 0.6vw;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 12vw 6vw;
+}
+
+.about-content-text {
+  max-width: 700px;
+  font-size: 1.2vw;
+  font-weight: 200;
+  color: #7e7e7e;
+}
+
+.about-title {
+  margin-right: 20vw;
+}
+
+.about-button {
+  margin-top: 50px;
+  font-family: poppins, sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.about-content {
+  margin-top: 30px;
+}
+
+.about-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Packaging and Labeling Section */
+.packaging-section {
+  margin: 12vw 0;
+  padding: 0 6vw;
+}
+
+.packaging-title {
+  margin-bottom: 6vw;
+}
+
+.packaging-title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 3.5vw;
+  font-weight: 500;
+}
+
+.packaging-title-text h3 {
+  text-align: left;
+  background-color: #f2f2f2;
+  color: black;
+  max-width: 18vw;
+  padding: 0.2vw 1vw;
+  border-radius: 0.4vw;
+  margin-bottom: 0.6vw;
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+.packaging-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4vw;
+}
+
+.packaging-content {
+  flex: 1;
+}
+
+.packaging-content-text {
+  max-width: 700px;
+  font-size: 1.2vw;
+  font-weight: 200;
+  color: #7e7e7e;
+  margin-bottom: 4vw;
+}
+
+.packaging-content-text p {
+  margin-bottom: 1.5vw;
+}
+
+.packaging-features {
+  margin: 3vw 0;
+}
+
+.packaging-feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2vw;
+}
+
+.feature-icon {
+  font-size: 2vw;
+  margin-right: 1.5vw;
+  padding-top: 0.2vw;
+}
+
+.feature-text h4 {
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.3vw;
+}
+
+.feature-text p {
+  font-size: 1vw;
+  font-weight: 300;
+  color: #7e7e7e;
+}
+
+.packaging-button {
+  margin-top: 3vw;
+  font-family: poppins, sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.packaging-showcase {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.packaging-img-main {
+  width: 100%;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.packaging-img-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1vw;
+  transition: transform 0.5s ease;
+}
+
+.packaging-img-main:hover img {
+  transform: scale(1.05);
+}
+
+.packaging-img-small-container {
+  display: flex;
+  gap: 1.5vw;
+  height: 14vw;
+}
+
+.packaging-img-small {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 1vw;
+}
+
+.packaging-img-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.packaging-img-small:hover img {
+  transform: scale(1.05);
 }
